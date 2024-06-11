@@ -1,0 +1,350 @@
+<!-- HELLO
+-
+DevFolio is a minimal, clean, lightweight and fully responsive template for Devlopers!
+Created by Anil Seervi.
+-
+GitHub repo: https://github.com/AnilSeervi/DevFolio
+README: https://github.com/AnilSeervi/DevFolio/blob/master/README.md
+-
+Have fun creating your portfolio on this template!!! -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+  <!-- Title: add your Portfolio websites's title here -->
+  <title>Minipomy | Developer</title>
+
+  <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
+  <meta name="keywords" content="Minipomy, Maximiliano, skill" />
+
+  <!-- Improve your SEO by adding a small descrption of you -->
+  <meta name="description" content="Maximiliano | Developer" />
+
+  <!-- Add a your png Logo to the assets folder and change the href attr accordingly  -->
+  <link rel="icon" type="image/png" href="./assets/devfolio-logo.png" />
+
+  <!-- Add your primary-theme color for the value of content -->
+  <meta name="theme-color" content="#36d1dc" />
+
+  <!-- Open Graph / Facebook -->
+  <!-- <meta property="og:type" content="website" /> -->
+  <!-- Fill content with the URL of this portfolio you'll host -->
+  <!-- <meta property="og:url" content="https://devfolio.js.org/" /> -->
+  <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
+  <!-- <meta property="og:title" content="Minipomy | Developer" /> -->
+  <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
+  <!-- <meta property="og:description" content="Made using DevFolio Template" /> -->
+  <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail 
+      so that a thumbnail image of your portfolio is shown while shared on other platform -->
+  <!-- <meta
+      property="og:image"
+      content="https://devfolio.js.org/assets/devfolio.png"
+    /> -->
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <!-- Again fill content attr with the URL of this portfolio you'll host -->
+  <meta property="twitter:url" content="https://devfolio.js.org" />
+  <!-- Recommended to use the same text used within <title> element -->
+  <meta property="twitter:title" content="[Your name here] | Developer" />
+  <!-- short description that shows up while your portfolio is shared -->
+  <meta property="twitter:description" content="Made using DevFolio Template" />
+  <!-- Fill content with the URL to the thumbnail image that you'll put in the assets folder -->
+  <meta property="twitter:image" content="https://anilseervi.vercel.app/assets/devfolio.png" />
+
+  <!-- link tags -->
+  <link rel="preload" as="style" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+
+  <!-- FontAwesome Icons link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script defer src="./javascript/scrollreveal.min.js"></script>
+  <script defer type="text/javascript" src="./javascript/scrollveal.js"></script>
+
+  <!-- Remove Google Analytics once you have your portfolio website set-up -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-122228201-4"
+    ></script> -->
+  <script>
+    window.dataLayer = window.dataLayer || []
+    function gtag() {
+      dataLayer.push(arguments)
+    }
+    gtag("js", new Date())
+
+    gtag("config", "UA-122228201-4")
+  </script>
+  <!-- End of Google Analytics -->
+</head>
+
+<body>
+  <!-- Hero Section -->
+  <div id="hero">
+    <section class="container">
+      <h1 class="hero-title">
+        Hi, my name is <span class="text-color-main name">Maximiliano</span>
+        <br />
+        I'm a <span class="text-color-main" id="hero-text">Python</span> Developer.
+      </h1>
+      <p class="hero-cta">
+        <a class="cta-btn cta-btn--hero" href="#about">Know me</a>
+      </p>
+    </section>
+    <a href="#about" class="scroll-down-link" aria-label="scroll-down">
+      <div class="scroll-down"></div>
+    </a>
+  </div>
+  <!-- /END Hero Section -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="row about-wrapper">
+        <div class="about-wrapper__image">
+          <img class="img-fluid" src="./assets/profile.png" alt="Profile Image" width="450" height="350" />
+        </div>
+        <div class="about-wrapper__info">
+          <p class="about-wrapper__info-text">
+            I am a passionate young technician with a lot of experience in the
+            IT-Sector for the last 4 years.
+          </p>
+          <p class="about-wrapper__info-text">
+            I am currently looking for new challenges, polishing my skills to
+            be able to reach on Cyber-Security areas or start working as an Python or Mobile Developer
+          </p>
+          <p class="about-wrapper__info-text">
+            I'm mostly active on Discord doing Hackintosh stuff or Github where I upload all my projects
+          </p>
+          <span class="about-wrapper__cta">
+            <a href="https://github.com/Minipomy" class="cta-btn cta-btn--resume">My GitHub</a>
+            <a href="https://discordapp.com/users/297937456685121541" class="cta-btn cta-btn--resume">My Discord</a>
+            <a href="https://www.linkedin.com/in/maximiliano-rivera-mendes-579174139/"
+              class="cta-btn cta-btn--resume">My LinkedIn</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /END About Section -->
+
+  <!--Projects Section-->
+  <section id="projects">
+    <div class="container">
+      <div class="project-wrapper">
+        <h2 class="section-title dark-blue-text">Projects</h2>
+
+        <!-- Each .row is a project -->
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Python Game</h3>
+            <p class="project-wrapper__text-info">
+              A simple Pygame using Python as main language and pygame libraries,
+              the goal was to make entities that could collide between them, adding bullets,
+              traps which all properties are settled by a config JSON file.
+            </p>
+            <div class="project-wrapper__text-btns">
+              <a href="https://github.com/Minipomy/MaximilianoRiveraMendes-pygame-tp-final" target="_blank"
+                class="cta-btn text-color-main">Source Code</a>
+            </div>
+          </div>
+
+          <div class="project-wrapper__image">
+            <a href="https://github.com/Minipomy/MaximilianoRiveraMendes-pygame-tp-final" target="_blank"
+              rel="noopener noreferrer">
+              <div class="thumbnail rounded">
+                <img src="./assets/Pygame-Game.png" class="img-fluid" alt="Pygame Game" width="1366" height="767" />
+              </div>
+            </a>
+          </div>
+        </article>
+        <!-- /END Project -->
+
+        <!-- Each .row is a project -->
+        <article class="row">
+          <div class="project-wrapper__text">
+            <h3 class="project-wrapper__text-title">Arduino Projects</h3>
+            <p class="project-wrapper__text-info">
+              Basic Arduino projects that are written in C language,
+              showing the possible applications of the components used.
+            </p>
+            <div class="project-wrapper__text-btns">
+              <a href="https://github.com/Minipomy/UTN-SPD-TP" target="_blank" class="cta-btn text-color-main">Source
+                Code</a>
+            </div>
+          </div>
+
+          <div class="project-wrapper__image">
+            <a href="https://github.com/Minipomy/UTN-SPD-TP" target="_blank" rel="noopener noreferrer">
+              <div class="thumbnail rounded">
+                <img src="./assets/ArduinoTinkercad.png" class="img-fluid" alt="Arduino Projects" width="1366"
+                  height="767" />
+              </div>
+            </a>
+          </div>
+        </article>
+        <!-- /END Project -->
+
+        <!-- /END Project -->
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
+  <!-- Tech Section -->
+  <section id="tech">
+    <div class="container">
+      <div class="tech-wrapper">
+        <h2 class="section-title dark-blue-text">Skills</h2>
+
+        <!-- Each .row is a tech -->
+        <article class="row">
+          <div class="tech-wrapper__text">
+            <h3 class="tech-wrapper__text-title">Programming Languages</h3>
+          </div>
+
+          <div class="tech-wrapper__icon">
+            <img src="https://skillicons.dev/icons?i=cs" alt="csharp logo"/>
+            <img src="https://skillicons.dev/icons?i=java" alt="java logo"/>
+            <img src="https://skillicons.dev/icons?i=py" alt="python logo"/>
+          </div>
+        </article>
+        <!-- Each .row is a tech -->
+        <article class="row">
+          <div class="tech-wrapper__text">
+            <h3 class="tech-wrapper__text-title">Mobile Development</h3>
+          </div>
+
+          <div class="tech-wrapper__icon">
+            <img src="https://skillicons.dev/icons?i=dart" alt="dart logo"/>
+            <img src="https://skillicons.dev/icons?i=flutter" alt="flutter logo"/>
+            <img src="https://skillicons.dev/icons?i=kotlin" alt="kotlin logo"/>
+
+          </div>
+        </article>
+        <!-- Each .row is a tech -->
+        <article class="row">
+          <div class="tech-wrapper__text">
+            <h3 class="tech-wrapper__text-title">DevOps</h3>
+          </div>
+
+          <div class="tech-wrapper__icon">
+            <img src="https://skillicons.dev/icons?i=aws" alt="amazonwebservices logo" />
+            <img src="https://skillicons.dev/icons?i=azure" alt="azure logo" />
+            <img src="https://skillicons.dev/icons?i=docker" alt="docker logo" />
+            <img src="https://skillicons.dev/icons?i=kubernetes" alt="kubernetes logo" />
+            <img src="https://skillicons.dev/icons?i=bash" alt="bash logo" />
+            <img src="https://skillicons.dev/icons?i=linux" alt="linux logo" />
+            <img src="https://skillicons.dev/icons?i=git" alt="git logo" />
+          </div>
+        </article>
+        <!-- Each .row is a tech -->
+        <article class="row">
+          <div class="tech-wrapper__text">
+            <h3 class="tech-wrapper__text-title">Frontend Development</h3>
+          </div>
+
+          <div class="tech-wrapper__icon">
+            <img src="https://skillicons.dev/icons?i=js" alt="javascript logo"/>
+            <img src="https://skillicons.dev/icons?i=css" alt="css3 logo"/>
+            <img src="https://skillicons.dev/icons?i=html" alt="html5 logo"/>
+
+          </div>
+        </article>
+        <!-- Each .row is a tech -->
+        <article class="row">
+          <div class="tech-wrapper__text">
+            <h3 class="tech-wrapper__text-title">IDEs</h3>
+          </div>
+
+          <div class="tech-wrapper__icon">
+            <img src="https://skillicons.dev/icons?i=vscode" alt="vscode logo" />
+            <img src="https://skillicons.dev/icons?i=visualstudio" alt="visualstudio logo" />
+            <img src="https://skillicons.dev/icons?i=androidstudio" alt="androidstudio logo" />
+            <img src="https://skillicons.dev/icons?i=idea" alt="intellijidea logo" />
+
+          </div>
+        </article>
+        <!-- Each .row is a tech -->
+        <article class="row">
+          <div class="tech-wrapper__text">
+            <h3 class="tech-wrapper__text-title">Frameworks</h3>
+          </div>
+
+          <div class="tech-wrapper__icon">
+            <img src="https://skillicons.dev/icons?i=flask" alt="flask logo"/>
+            <img src="https://skillicons.dev/icons?i=dotnet" alt="dot-net logo"/>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!--Studies Section-->
+  <section id="studies">
+    <div class="container">
+      <div class="project-wrapper">
+        <h2 class="section-title dark-blue-text">Studies</h2>
+        <p>Work In Progress</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-wrapper">
+        <p class="contact-wrapper__text">I'm open to work! 😎</p>
+        <a href="#" class="cta-btn cta-btn--resume">Contact me</a>
+      </div>
+    </div>
+  </section>
+  <!-- END Contact Section -->
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <a href="#hero" class="back-to-top" aria-label="go back to top">
+        <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+      </a>
+      <div class="social-links">
+        <a href="#!" target="_blank" rel="noopener noreferrer" aria-label="instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="#!" target="_blank" rel="noopener noreferrer" aria-label="linkedin">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Minipomy" target="_blank" rel="noopener noreferrer" aria-label="github">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+      <hr />
+      <p class="footer__text">
+        &copy; <span id="year"></span> Made with &hearts;
+      </p>
+    </div>
+  </footer>
+  <!-- END Footer Section -->
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear()
+  </script>
+  <script src="./javascript/vanilla-tilt.min.js"></script>
+  <script type="text/javascript" src="./javascript/valtilt.js"></script>
+  <script src="./javascript/textChanger.js"></script>
+
+</body>
+
+</html>
