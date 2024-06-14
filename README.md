@@ -9,12 +9,12 @@ This is my Portfolio website
 
 ## ToDo List:
 
-- [ ]  Add a Speciality Auto-Swapper at Hero Section
-- [ ]  Add Skills Section
-- [ ]  Generate Animations for each Skill
-- [ ]  Add Studies Section
+- [x]  Add a Speciality Auto-Swapper at Hero Section
+- [x]  Add Skills Section
+- [x]  Generate Animations for each Skill
+- [x]  Add Studies Section
 - [ ]  Generate Animations for each Study
 - [ ]  Create Dark-Light mode functionality
 - [ ]  Create Language Switcher
 - [ ]  Publish final product on LinkedIn
-- [ ]  Generate Testing Branch
+- [x]  Generate Testing Branch
