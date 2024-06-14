@@ -6,18 +6,47 @@ const defaultProps = {
   desktop: true,
   mobile: true,
 };
-// Hero Section
+var elementText = document.getElementById("speciality");
+
+function changeText() {
+  var textOriginal = elementText.textContent;
+  switch (textOriginal) {
+      case "Python":
+          elementText.textContent = textOriginal.replace("Python", "C#");
+          break;
+      case "C#":
+          elementText.textContent = textOriginal.replace("C#", "Mobile");
+          break;
+      case "Mobile":
+          elementText.textContent = textOriginal.replace("Mobile", "Python");
+          break;
+  }
+}
+
+setInterval(changeText, 4000);
+
+//Universal values
 ScrollReveal().reveal(".hero-title", {
   ...defaultProps,
   delay: 500,
   origin: window.innerWidth > 768 ? "left" : "bottom",
 });
+
+// Hero Section
 ScrollReveal().reveal(".name", {
   ...defaultProps,
   distance: "0px",
   delay: 700,
   scale: 0,
 });
+
+ScrollReveal().reveal(".speciality", {
+  ...defaultProps,
+  distance: "0px",
+  delay: 1000,
+  scale: 0,
+});
+
 ScrollReveal().reveal(".hero-cta", {
   ...defaultProps,
   delay: 1200,
@@ -62,13 +91,33 @@ ScrollReveal().reveal(".project-wrapper__image", {
   origin: window.innerWidth > 768 ? "right" : "bottom",
 });
 
+/* Skills Section */
+ScrollReveal().reveal(".skill-wrapper__text", {
+  ...defaultProps,
+  delay: 600,
+  scale: 0.9,
+  origin: window.innerWidth > 768 ? "left" : "bottom",
+});
+
+ScrollReveal().reveal(".skill-wrapper__icon", {
+  ...defaultProps,
+  delay: 600,
+  scale: 0.9,
+  origin: window.innerWidth > 768 ? "right" : "bottom",
+});
 /* Contact Section */
 ScrollReveal().reveal(".contact-wrapper", {
   ...defaultProps,
   delay: 600,
 });
 
-ScrollReveal().reveal(".fa", {
+ScrollReveal().reveal(".back-to-top", {
+  ...defaultProps,
+  delay: 500,
+  interval: 100,
+});
+
+ScrollReveal().reveal(".fa-brands", {
   ...defaultProps,
   delay: 500,
   interval: 100,
