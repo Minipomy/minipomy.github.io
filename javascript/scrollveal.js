@@ -23,7 +23,7 @@ function changeText() {
   }
 }
 
-setInterval(changeText, 4000);
+setInterval(changeText, 2500);
 
 //Universal values
 ScrollReveal().reveal(".hero-title", {
